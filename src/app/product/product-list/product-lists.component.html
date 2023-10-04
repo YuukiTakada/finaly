@@ -2,8 +2,8 @@
   <br />
   <div class="row">
     <!-- 商品一覧表示ここから -->
-    <div class="col" *ngFor="let p of products">
-      <a routerLink="detail">
+    <div class="col" *ngFor="let p of products; index as productId">
+      <a routerLink="{{ productId }}">
         <div class="card">
           <img
             src="../assets/img/placeholder.png"
@@ -12,8 +12,10 @@
           />
           <div class="card-body">
             <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              {{ product.name }}
+            </p>
+            <p>
+              {{ product.description }}
             </p>
           </div>
         </div>
