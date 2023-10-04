@@ -1,0 +1,24 @@
+<div class="container text-center">
+  <br />
+  <div class="row">
+    <!-- 商品一覧表示ここから -->
+    <div class="col" *ngFor="let p of products">
+      <a routerLink="detail">
+        <div class="card">
+          <img
+            src="../assets/img/placeholder.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <!-- 商品一覧表示ここまで -->
+  </div>
+</div>
